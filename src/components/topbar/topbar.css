@@ -1,0 +1,55 @@
+.topbar{
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.topbarLogoSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topbarLogo{
+    width: 300px;
+}
+
+.topbarLogo img{
+    width: 100%;
+}
+
+.topbarIcons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.topbarMenuCon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px lightgray;
+    border-top: solid 1px lightgray;
+    padding: 10px 0;
+}
+
+.topbarMenu ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.topbarMenu ul li{
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.topbarMenu ul li:first-child{
+    color: red;
+}
+
+.topbarSearch{
+    cursor: pointer;
+}

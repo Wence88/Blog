@@ -1,0 +1,185 @@
+.featured {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.featuredLeft{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.featuredLeft h2{
+font-size: 26px;
+}
+
+.featuredLeft span{
+    color: red;
+    font-size: 12px;
+}
+
+.featuredLeftTopImgCon{
+    width: 100%;
+    background-color: #ebebeb;
+    height: 400px;
+    position: relative;
+}
+
+.featuredLeftTopImgCon img{
+    height: 68%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.bookmarkIcon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.featuredLeftTopText{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+h4{
+    color: red;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+h3{
+    font-size: 26px;
+    line-height: 1;
+}
+
+p{
+    color: grey;
+    font-size: 12px;
+}
+
+.featuedLeftBottomCon{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.featuedLeftBottomItem{
+    background-color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.featuedLeftBottomItem h3{
+    font-size: 18px;
+}
+
+.featuredLeftBottomText{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.featuredRight{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.featuedRightTopCon{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.featuedRightTopItem{
+    background-color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.featuredRightTopText{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.featuedLeftTopCon{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.featuedLeftTopItem{
+    background-color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.featuredLeftTopText{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.featuredRightBottomCon{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.featuredRightBottomItem{
+    display: flex;
+    align-items: center;
+    background-color: #ebebeb;
+    gap: 20px;
+    height: 120px;
+}
+
+.featuredRightBottomItem .left{
+    flex: 1;
+    height: 100%;
+}
+
+.featuredRightBottomItem .left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.featuredRightBottomItem .right{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.featuredRightBottomItem .right h3{
+    font-size: 18px;
+}
