@@ -31,6 +31,7 @@ const Africa = () => {
             <div className="left">
               <img src="/img/img1.jpeg" alt="" />
             </div>
+
             <div className="right">
               <h3>How bitcoin can help a business attract new employees</h3>
               <p>October 13, 2023</p>
@@ -66,7 +67,6 @@ const Africa = () => {
               <p>October 13, 2023</p>
             </div>
           </div>
-
         </div>
       </div>
     </div>
