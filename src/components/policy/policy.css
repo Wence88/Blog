@@ -1,0 +1,120 @@
+.policy {
+    padding: 20px 40px;
+  }
+  
+  .policyCon{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .policyLeft {
+    flex: 1;
+    background-color: #ebebeb;
+    height: 530px;
+  }
+
+  .policyLeftImg img {
+    object-fit: cover;
+    width: 100%;
+    height: 70%;
+  }
+  
+  .policyTextCon {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .policyTextCon h2 {
+    font-size: 18px;
+  }
+  
+  .policyTextCon h3 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .policyMiddle {
+    flex: 1;
+    background-color: #ebebeb;
+    height:815px;
+    gap: 10px;
+  }
+
+  .policyMiddleUp img {
+    object-fit: cover;
+    width: 100%;
+    height: 40%;
+    flex: 1;
+  }
+  
+  .policyMiddleUpItemText {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .policyMiddleUpItemText h2 {
+    font-size: 18px;
+  }
+  
+  .policyMiddleDown img {
+    object-fit: cover;
+    width: 100%;
+    height: 40%;
+    flex: 1;
+  }
+  
+  .policyMiddleDownItemText {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .policyMiddleDownItemText h2 {
+    font-size: 18px;
+  }
+
+  .policyRight {
+    flex: 1;
+    background-color: #ebebeb;
+    height: 700px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: transparent;
+  }
+
+  .policyRight .third {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    height: 22%;
+  }
+
+  .policyRight .left {
+    flex: 1;
+    height: 100%;
+  }
+
+  .policyRight .left img {
+  object-fit: cover;
+  }
+
+  .policyRight .third .right {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    gap: 10px;
+    align-content: center; 
+  }
+
+  .policyRight .right h3{
+    font-size: 18px;
+  }

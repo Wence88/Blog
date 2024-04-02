@@ -6,6 +6,7 @@ import Topbar from "./components/topbar/Topbar";
 import Featured from "./components/featured/Featured";
 import Africa from "./components/africa/Africa";
 import Culture from "./components/culture/Culture";
+import Policy from "./components/policy/Policy";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
       <Africa />
       <hr style={{ color: "#ebebeb" }} />
       <Culture />
+      <hr style={{ color: "#ebebeb" }} />
+      <Policy />
     </div>
   );
 }
