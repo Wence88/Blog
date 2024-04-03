@@ -1,18 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./topbar.css";
 import { CiFacebook } from "react-icons/ci";
 import { FaXTwitter } from "react-icons/fa6";
 import { CiInstagram } from "react-icons/ci";
 
 const Topbar = () => {
+  const [num, setNum] = useState(0);
+
   return (
     <div className="topbar">
       <div className="topbarLogoSection">
-        <div className="topbarLogo">
-          <a href="/">
+        <div className="topbarLogo" onClick={() => setNum((prev) => prev + 1)}>
+          <a href="#">
             <img src="./img/logo.png" alt="logo" />
           </a>
         </div>
+
+        {num}
 
         <div className="topbarIcons">
           <CiFacebook />

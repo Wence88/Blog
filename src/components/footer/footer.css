@@ -1,0 +1,33 @@
+.footer {
+  background-color: rgb(46, 45, 45);
+  padding: 20px 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footerItems {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footerItems p{
+    font-size: 14px;
+    color: white;
+}
+
+.horiz{
+    height: 2px;
+    width: 100%;
+    background-color: lightgray;
+}
+
+.hoziz_child{
+    height: 100%;
+    width: 25%;
+    background-color: red;
+}

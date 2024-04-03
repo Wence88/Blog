@@ -116,3 +116,18 @@
   font-size: 15px;
   color: #ebebeb;
 }
+
+@media only screen and (max-width: 768px) {
+  .cultureTopCon{
+    flex-direction: column;
+  }
+
+  .cultureBottomCon{
+    flex-direction: column;
+    
+  }
+
+  .cultureBottomItem{
+    width: 100%;
+  }
+}
