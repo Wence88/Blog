@@ -109,3 +109,15 @@
 .policyRight .right h3 {
   font-size: 16px;
 }
+
+@media only screen and (max-width: 768px) {
+  .policyCon{
+    flex-direction: column;
+  }
+
+  .policyRight:right{
+    flex-direction: column;
+  }
+
+  }
+
