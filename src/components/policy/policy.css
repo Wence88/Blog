@@ -91,7 +91,6 @@
 
 .policyRight .left {
   flex: 1;
-  /* height: 100%; */
 }
 
 .policyRight .left img {
@@ -111,13 +110,28 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .policyCon{
+  .policyCon {
     flex-direction: column;
   }
 
-  .policyRight:right{
+  .policyRight:right {
     flex-direction: column;
   }
 
+  .policyRight .third {
+    flex-direction: column;
   }
 
+  .policyRight .third .right{
+    flex: 0;
+  }
+
+  .policyRight .left{
+    width: 100%;
+  }
+
+  .policyRight .left img{
+    flex: 0;
+    width: 100%;
+  }
+}

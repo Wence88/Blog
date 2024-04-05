@@ -15,7 +15,7 @@ import Footer from "./components/footer/Footer";
 // 3. useCallback hook
 
 function App() {
-  const [news, setNews] = useState(null)
+  const [news, setNews] = useState(null);
 
   return (
     <div className="app">

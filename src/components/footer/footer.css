@@ -3,7 +3,7 @@
   padding: 20px 40px;
   color: white;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 30px;
 }
@@ -13,95 +13,88 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  height: auto;
 }
 
-.footerItems p{
-    font-size: 14px;
-    color: white;
-}
-
-.footerItems h2{
-  font-size: 18px;
+.footerItems p {
+  font-size: 14px;
   color: white;
-}
-.horiz{
-    height: 2px;
-    width: 100%;
-    background-color: lightgray;
+  margin-top: -5px;
 }
 
-.hoziz_child{
-    height: 100%;
-    width: 25%;
-    background-color: red;
+.footerItems h2 {
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+}
+.horiz {
+  height: 2px;
+  width: 100%;
+  background-color: lightgray;
+}
+
+.hoziz_child {
+  height: 100%;
+  width: 25%;
+  background-color: red;
 }
 
 .footerItems:nth-child(2) {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
-  url("/img/img1.jpeg");
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-height: 350px;
-width: 24%;
-position: relative;
-flex: 1;
-display: flex;
-flex-direction: column;
-gap: 10px;
+    url("/img/img1.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 350px;
 }
 
 .footerItems:nth-child(2) h2 {
   color: white;
-  position:relative;
-  Top: 150px;
-  left: 15px;
-  display: flex;
-  flex-direction: column;
-  
+  position: absolute;
+  bottom: 40px;
+  left: 9px;
 }
 
-.footerItems:nth-child(2) p{
-  font-size: 15px;
-  padding: 0px 10px;
-  position:relative;
-  display: flex;
-  flex-direction: column;
-  top: 150px;
+.footerItems:nth-child(2) p {
+  position: absolute;
+  bottom: 15px;
   left: 9px;
 }
 
 .footerItems:nth-child(3) h2 {
   color: white;
-  position:relative;
-  left: 15px;
   display: flex;
   flex-direction: column;
-  font-size: 18px;
 }
 
-.footerItems:nth-child(3) p{
-  font-size: 15px;
-  padding: 0px 10px;
-  position:relative;
-  display: flex;
-  flex-direction: column;
-  left: 9px;
-  color: antiquewhite;
-}
-
-.footerIcons{
+.footerIcons {
   display: flex;
   gap: 20px;
 }
 
 @media only screen and (max-width: 768px) {
-  .footer{
+  .footer {
     flex-direction: column;
   }
 
-  .policyRight:right{
+  .policyRight:right {
     flex-direction: column;
   }
 
+  .footerItems:nth-child(2){
+    padding: 40px  20px;
   }
+
+  .footerItems:nth-child(2) h2{
+    position: initial;
+  }
+
+  .footerItems:nth-child(2) p{
+    position: initial;
+  }
+}
