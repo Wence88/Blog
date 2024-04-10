@@ -1,8 +1,9 @@
 import React from "react";
 import "./featured.css";
 import { FaBookmark } from "react-icons/fa6";
+import moment from "moment";
 
-const Featured = () => {
+const Featured = ({ news }) => {
   return (
     <div className="featured">
       <div className="featuredLeft">
@@ -10,130 +11,73 @@ const Featured = () => {
           Featured <span>SEE MORE</span>
         </h2>
 
-        <div className="featuredLeftTopImgCon">
-          <img src="./img/img1.jpeg" alt="" />
+        {news?.slice(0, 1)?.map((item, index) => (
+          <div className="featuredLeftTopImgCon" key={index}>
+            <img src={item.urlToImage} alt="" />
 
-          <div className="bookmarkIcon">
-            <FaBookmark color="white" size={12} />
-          </div>
+            <div className="bookmarkIcon">
+              <FaBookmark color="white" size={12} />
+            </div>
 
-          <div className="featuredLeftTopText">
-            <h4>Featured {"<>"} Africa</h4>
-            <h3>10 African countries with the highest life expectancy</h3>
-            <p>October 18, 2023.</p>
+            <div className="featuredLeftTopText">
+              <h4>Featured {"<>"} Africa</h4>
+              <h3>{item?.title}</h3>
+              <p>{moment(item.publishedAt).format("MMMM Do, YYYY")}</p>
+            </div>
           </div>
-        </div>
+        ))}
 
         <div className="featuedLeftBottomCon">
-          <div className="featuedLeftBottomItem">
-            <img src="./img/img2.jpg" alt="" />
+          {news?.slice(1, 4)?.map((item, index) => (
+            <div className="featuedLeftBottomItem" key={index}>
+              <img src={item.urlToImage} alt="" />
 
-            <div className="bookmarkIcon">
-              <FaBookmark color="white" size={12} />
+              <div className="bookmarkIcon">
+                <FaBookmark color="white" size={12} />
+              </div>
+
+              <div className="featuredLeftBottomText">
+                <h4>Crypto</h4>
+                <h3>{item?.title}</h3>
+                <p>{moment(item.publishedAt).format("MMMM Do, YYYY")}</p>
+              </div>
             </div>
-
-            <div className="featuredLeftBottomText">
-              <h4>Crypto</h4>
-              <h3>What can you do with Bitcoin in 2023</h3>
-              <p>October 18, 2023.</p>
-            </div>
-          </div>
-
-          <div className="featuedLeftBottomItem">
-            <img src="./img/img5.jpg" alt="" />
-
-            <div className="bookmarkIcon">
-              <FaBookmark color="white" size={12} />
-            </div>
-
-            <div className="featuredLeftBottomText">
-              <h4>Crypto</h4>
-              <h3>What can you do with Bitcoin in 2023</h3>
-              <p>October 18, 2023.</p>
-            </div>
-          </div>
-
-          <div className="featuedLeftBottomItem">
-            <img src="./img/img6.jpg" alt="" />
-
-            <div className="bookmarkIcon">
-              <FaBookmark color="white" size={12} />
-            </div>
-
-            <div className="featuredLeftBottomText">
-              <h4>Crypto</h4>
-              <h3>What can you do with Bitcoin in 2023</h3>
-              <p>October 18, 2023.</p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
 
       <div className="featuredRight">
         <div className="featuedRightTopCon">
-          <div className="featuedRightTopItem">
-            <img src="./img/img3.jpeg" alt="" />
+          {news?.slice(4, 6)?.map((item, index) => (
+            <div className="featuedRightTopItem" key={index}>
+              <img src={item.urlToImage} alt="" />
 
-            <div className="bookmarkIcon">
-              <FaBookmark color="white" size={12} />
+              <div className="bookmarkIcon">
+                <FaBookmark color="white" size={12} />
+              </div>
+
+              <div className="featuredRightTop"></div>
+              <h4>In the News</h4>
+              <h3>{item?.title?.slice(0, 30)}</h3>
+              <p>{moment(item.publishedAt).format("MMMM Do, YYYY")}</p>
             </div>
-
-            <div className="featuredRightTop"></div>
-            <h4>In the News</h4>
-            <h3>Top 5 best paid jobs in Africa 2023</h3>
-            <p>October 18, 2023.</p>
-          </div>
-
-          <div className="featuedRightTopItem">
-            <img src="./img/img4.webp" alt="" />
-
-            <div className="bookmarkIcon">
-              <FaBookmark color="white" size={12} />
-            </div>
-
-            <div className="featuredLeftTop"></div>
-            <h4>In the News</h4>
-            <h3>Top 5 best paid jobs in Africa 2023</h3>
-            <p>October 18, 2023.</p>
-          </div>
+          ))}
         </div>
 
         <div className="featuredRightBottomCon">
-          <div className="featuredRightBottomItem">
-            <div className="left">
-              <img src="/img/img1.jpeg" alt="" />
+          {news?.slice(6, 9)?.map((item, index) => (
+            <div className="featuredRightBottomItem" key={index}>
+              <div className="left">
+                <img src={item.urlToImage} alt="" />
+              </div>
+
+              <div className="right">
+                <h3>{item?.title}</h3>
+
+                <p>{moment(item.publishedAt).format("MMMM Do, YYYY")}</p>
+              </div>
             </div>
-
-            <div className="right">
-              <h3>How bitcoin can help a business attract new employees</h3>
-
-              <p>October 13, 2023</p>
-            </div>
-          </div>
-
-          <div className="featuredRightBottomItem">
-            <div className="left">
-              <img src="/img/img1.jpeg" alt="" />
-            </div>
-
-            <div className="right">
-              <h3>How bitcoin can help a business attract new employees</h3>
-
-              <p>October 13, 2023</p>
-            </div>
-          </div>
-
-          <div className="featuredRightBottomItem">
-            <div className="left">
-              <img src="/img/img1.jpeg" alt="" />
-            </div>
-
-            <div className="right">
-              <h3>How bitcoin can help a business attract new employees</h3>
-
-              <p>October 13, 2023</p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

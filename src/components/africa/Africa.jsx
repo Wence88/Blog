@@ -1,7 +1,8 @@
 import React from "react";
 import "./africa.css";
 
-const Africa = () => {
+const Africa = ({news}) => {
+  // console.log(news)
   return (
     <div className="africa">
       <div className="featuredLeft">

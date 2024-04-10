@@ -1,7 +1,8 @@
 import React from "react";
 import "./culture.css";
 
-const Culture = () => {
+const Culture = ({news}) => {
+  // console.log(news)
   return (
     <div className="culture">
       <div className="featuredLeft">

@@ -86,6 +86,10 @@ p {
   position: relative;
 }
 
+.featuedLeftBottomItem img {
+  width: 100%;
+}
+
 .featuedLeftBottomItem h3 {
   font-size: 18px;
 }
@@ -117,6 +121,10 @@ p {
   flex-direction: column;
   gap: 10px;
   position: relative;
+}
+
+.featuedRightTopItem img {
+  width: 100%;
 }
 
 .featuredRightTopText {
@@ -206,7 +214,7 @@ p {
     flex-direction: column;
   }
 
-  .featuedRightTopCon{
+  .featuedRightTopCon {
     flex-direction: column;
   }
 }
