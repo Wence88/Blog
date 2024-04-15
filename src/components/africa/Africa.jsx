@@ -1,7 +1,8 @@
 import React from "react";
 import "./africa.css";
+import moment from "moment";
 
-const Africa = ({news}) => {
+const Africa = ({ news }) => {
   // console.log(news)
   return (
     <div className="africa">
@@ -20,54 +21,30 @@ const Africa = ({news}) => {
         </div>
 
         <div className="africaBottomItem">
-          <img src="/img/img5.jpg" alt="" />
-          <div className="africaBottomItemText">
-            <h3>10 African countries with the highest life expectancy</h3>
-            <p>October 18, 2023.</p>
-          </div>
+          {news?.slice(1, 2)?.map((item, index) => (
+            <div key={index}>
+              <img src={item.urlToImage} alt="" />
+              <div className="africaBottomItemText">
+                <h3>{item?.title}</h3>
+                <p>{moment(item.publishedAt).format("MMMM Do, YYYY")}</p>
+              </div>
+            </div>
+          ))}
         </div>
 
         <div className="africaBottomItem">
-          <div className="third">
-            <div className="left">
-              <img src="/img/img1.jpeg" alt="" />
-            </div>
+          {news?.slice(2)?.map((item, index) => (
+            <div className="third" key={index}>
+              <div className="left">
+                <img src={item.urlToImage} alt="" />
+              </div>
 
-            <div className="right">
-              <h3>How bitcoin can help a business attract new employees</h3>
-              <p>October 13, 2023</p>
+              <div className="right">
+                <h3>{item?.title}</h3>
+                <p>{moment(item.publishedAt).format("MMMM Do, YYYY")}</p>
+              </div>
             </div>
-          </div>
-
-          <div className="third">
-            <div className="left">
-              <img src="/img/img1.jpeg" alt="" />
-            </div>
-            <div className="right">
-              <h3>How bitcoin can help a business attract new employees</h3>
-              <p>October 13, 2023</p>
-            </div>
-          </div>
-
-          <div className="third">
-            <div className="left">
-              <img src="/img/img1.jpeg" alt="" />
-            </div>
-            <div className="right">
-              <h3>How bitcoin can help a business attract new employees</h3>
-              <p>October 13, 2023</p>
-            </div>
-          </div>
-
-          <div className="third">
-            <div className="left">
-              <img src="/img/img1.jpeg" alt="" />
-            </div>
-            <div className="right">
-              <h3>How bitcoin can help a business attract new employees</h3>
-              <p>October 13, 2023</p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

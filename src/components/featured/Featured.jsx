@@ -4,6 +4,7 @@ import { FaBookmark } from "react-icons/fa6";
 import moment from "moment";
 
 const Featured = ({ news }) => {
+
   return (
     <div className="featured">
       <div className="featuredLeft">
